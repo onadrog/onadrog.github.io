@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @onadrog
 - 👀 I’m interested in coding things making tests, create apps
-- 🌱 I’m currently learning Javascript environment and a bit of Python
 - 💞️ I’m looking to collaborate on Open Source prrojects
 - 📫 How to reach me sebastien.gordano@gmail.com
 
