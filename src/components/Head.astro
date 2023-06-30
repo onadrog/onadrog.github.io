@@ -48,11 +48,11 @@ const siteImg = getSiteURl(image.src as string, Astro.url).toString();
 />
 <link
     rel="sitemap"
-    href={getSiteURl("/sitemap-index.xml", Astro.site).toString()}
+    href={getSiteURl("sitemap-index.xml", Astro.site).toString()}
 />
 <link
     rel="alternate"
-    href={getSiteURl("/rss.xml", Astro.site).toString()}
+    href={getSiteURl("rss.xml", Astro.site).toString()}
     type="application/rss+xml"
     title="onadrog Website RSS feed"
 />

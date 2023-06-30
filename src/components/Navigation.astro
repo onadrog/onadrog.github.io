@@ -10,7 +10,7 @@ import ThemeSwitcher from "./ThemeSwitcher.astro";
     <CrtSwitch />
     <ul class="navigation-list">
         <li class="navigation-list--links">
-            <a rel="prefetch" href="/">Home</a>
+            <a rel="prefetch" href={getSiteURl("/", Astro.site)}>Home</a>
         </li>
         <li class="navigation-list--links">
             <a rel="prefetch" href={getSiteURl("projets", Astro.site).toString()}>Projets</a>
