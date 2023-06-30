@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
-export type Props = Pick<CollectionEntry<"blog">["data"], "tags">;
+export type Props = Pick<CollectionEntry<"projets">["data"], "tags">;
 
 const { tags } = Astro.props;
 ---
@@ -9,7 +9,7 @@ const { tags } = Astro.props;
 <nav aria-label="Tags Menu" class="tag-nav">
     <ul class="flex-wrap">
         {
-            tags.map((t) => (
+            tags.map((t: string) => (
                 <li class="tag-link">
                     <span aria-hidden="true">#</span>
                     <a href={new URL(`/tag/${t}`, Astro.site).toString()}>

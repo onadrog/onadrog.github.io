@@ -3,7 +3,7 @@ import "../styles/components/_card.scss";
 import { site } from "../data/site";
 import type { CollectionEntry } from "astro:content";
 
-export type Props = Omit<CollectionEntry<"blog">["data"], "draft"> & {
+export type Props = Omit<CollectionEntry<"projets">["data"], "draft"> & {
     url: string;
 };
 const { title, url, description, tags, pubDate } = Astro.props;
@@ -28,7 +28,7 @@ const { title, url, description, tags, pubDate } = Astro.props;
     </p>
     <ul class="flex-wrap card-tags">
         {
-            tags.map((t) => (
+            tags.map((t: string) => (
                 <li class="tag-link">
                     <a href={`${new URL(`/tag/${t}`, Astro.site).toString()}`}>
                         <span aria-hidden="true"># </span>
