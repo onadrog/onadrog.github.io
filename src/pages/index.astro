@@ -1,0 +1,10 @@
+---
+import AuthorCard from "../components/AuthorCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title={"Home"} description={"Home Page"}>
+    <Fragment slot="main">
+    <AuthorCard />
+    </Fragment>
+</BaseLayout>
