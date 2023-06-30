@@ -3,13 +3,16 @@ import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 import prefetch from "@astrojs/prefetch";
 
+import { loadEnv } from "vite";
+const { SITE_URL, BASE_URL } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 // https://astro.build/config
 import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://onadrog.github.io",
-	base: "/onadrog",
+	// site: "https://onadrog.github.io",
+	site: SITE_URL,
+	base: BASE_URL,
 	markdown: {
 		shikiConfig: {
 			theme: "dracula",
