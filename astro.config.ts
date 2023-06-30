@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://onadrog.github.io",
+	site: "https://onadrog.github.io/onadrog/",
 	markdown: {
 		shikiConfig: {
 			theme: "dracula",
