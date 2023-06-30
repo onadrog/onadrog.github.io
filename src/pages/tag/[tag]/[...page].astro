@@ -5,7 +5,7 @@ import type { Page, GetStaticPathsOptions } from "astro";
 import { CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const allPosts = await getCollection("blog");
+    const allPosts = await getCollection("projets");
     const uniqueTag = [...new Set(allPosts.map((p) => p.data.tags).flat())];
     return uniqueTag.map((tag) => {
         const filtered = allPosts.filter(
@@ -19,7 +19,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 }
 
 interface page extends Omit<Page, "data"> {
-    data: CollectionEntry<"blog">[];
+    data: CollectionEntry<"projets">[];
 }
 
 interface Props {
