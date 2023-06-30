@@ -1,0 +1,15 @@
+article {
+    max-width: 80vw;
+    margin-inline: auto;
+    font-size: var(--fs-1);
+
+    h1,h2,h3,h4,h5,h6 {
+        text-align: start;
+        color: hsl(var(--accent));
+        margin: .3rem;
+    }
+
+    a {
+        color: hsl(var(--accent-2));
+    }
+}

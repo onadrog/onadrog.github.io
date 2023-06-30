@@ -5,6 +5,7 @@ import Head from "../components/Head.astro";
 import Navigation from "../components/Navigation.astro";
 import TagNav from "../components/TagNav.astro";
 import { site } from "../data/site";
+import "../styles/base/blogPosts.scss";
 
 type Props = CollectionEntry<"projets">["data"];
 const { title, description, tags, pubDate } = Astro.props;

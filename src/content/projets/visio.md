@@ -31,7 +31,7 @@ rapidement des routes, base de données.
 ### SSE
 Le système de notification j'ai opté pour `Mercure`, là aussi j'avais le choix
 entre les websocket et les server side event, et puisque le but étant de
-d&couvrir de nouvelles techno mon choix c'est rapidement tourné vers `Mercure`
+découvrir de nouvelles techno mon choix c'est rapidement tourné vers `Mercure`
 (qu'est ce que c'était que ce SSE ?)
 
 ### UI
@@ -59,4 +59,4 @@ Malgré tout c'était une bonne expérience à développer, et un bon casse-têt
 gérer les flux envoyer et reçu dans Redux.
 
 
-[Code source](https://github.com/onadrog/visio)
+### [Code source](https://github.com/onadrog/visio)
