@@ -1,4 +1,5 @@
 ---
+import { getSiteURl } from "../utils/getSiteUrl";
 import CrtSwitch from "./CrtSwitch.astro";
 import ThemeSwitcher from "./ThemeSwitcher.astro";
 ---
@@ -12,7 +13,7 @@ import ThemeSwitcher from "./ThemeSwitcher.astro";
             <a rel="prefetch" href="/">Home</a>
         </li>
         <li class="navigation-list--links">
-            <a rel="prefetch" href="/projets">Projets</a>
+            <a rel="prefetch" href={getSiteURl("projets", Astro.site).toString()}>Projets</a>
         </li>
     </ul>
 </nav>
