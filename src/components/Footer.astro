@@ -18,7 +18,10 @@ const year = new Date().getFullYear();
         </a>
     </address>
     <p class="footer-links">
-        <a class="footer-links--rss" href={getSiteURl("rss.xml", Astro.site).toString()} target="_blank"
+        <a
+            class="footer-links--rss"
+            href={getSiteURl("rss.xml", Astro.site).toString()}
+            target="_blank"
             ><span class="sr-only">RSS Feed</span>
             <Icon name="rss" size={18} aria-hidden="true" />
         </a>

@@ -1,6 +1,6 @@
 ---
 title: "Visio"
-pubDate: 2023-06-30
+pubDate: 2023-06-30T09:09:08+02:00
 draft: false
 description: "Un site de video-conference"
 tags: ["Js", "WIP"]
@@ -25,10 +25,12 @@ envoyé le flux à plusieurs personnes ? websocket, SSE ? Je suis tombé sur
 [peerjs](https://peerjs.com) qui permet de gérer les connexions entres pairs.
 
 ### Backend
+
 `Symfony` car le framework me permettait de mettre en place très
 rapidement des routes, base de données.
 
 ### SSE
+
 Le système de notification j'ai opté pour `Mercure`, là aussi j'avais le choix
 entre les websocket et les server side event, et puisque le but étant de
 découvrir de nouvelles techno mon choix c'est rapidement tourné vers `Mercure`
@@ -47,7 +49,6 @@ Pour l'état global faisant mes premiers pas dans l'écosystème Reactjs je me s
 vite retrouvé face à Redux afin de pouvoir gérer les différentes connexion entre
 les participants, connaitre les IP, et pseudos, rejoindre les rooms etc...
 
-
 Après un brain storming avec moi même voila comment est née ce site de
 video conference à héberger sois même.
 
@@ -57,6 +58,5 @@ gérer, voilà pourquoi le projet est resté en WIP, quelques bugs restent prés
 mais les principales fonctions sont là. Les video conferences fonctionnent.
 Malgré tout c'était une bonne expérience à développer, et un bon casse-tête à
 gérer les flux envoyer et reçu dans Redux.
-
 
 ### [Code source](https://github.com/onadrog/visio)

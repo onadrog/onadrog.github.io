@@ -2,7 +2,7 @@
 import "../styles/components/_card.scss";
 import { site } from "../data/site";
 import type { CollectionEntry } from "astro:content";
-import  {getSiteURl} from "../utils/getSiteUrl"
+import { getSiteURl } from "../utils/getSiteUrl";
 
 export type Props = Omit<CollectionEntry<"projets">["data"], "draft"> & {
     url: string;
@@ -31,7 +31,12 @@ const { title, url, description, tags, pubDate } = Astro.props;
         {
             tags.map((t: string) => (
                 <li class="tag-link">
-                    <a href={`${getSiteURl(`tag/${t}`, Astro.site).toString()}`}>
+                    <a
+                        href={`${getSiteURl(
+                            `tag/${t}`,
+                            Astro.site
+                        ).toString()}`}
+                    >
                         <span aria-hidden="true"># </span>
                         {t}
                     </a>

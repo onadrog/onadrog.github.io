@@ -3,10 +3,15 @@ article {
     margin-inline: auto;
     font-size: var(--fs-1);
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         text-align: start;
         color: hsl(var(--accent));
-        margin: .3rem;
+        margin: 0.3rem;
     }
 
     a {
